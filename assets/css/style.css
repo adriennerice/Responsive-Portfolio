@@ -247,7 +247,7 @@ p {
 
     .name, .nav, .header,.headerSection {
         width: 100%;
-        /* position: static; */
+        /* position: relative; */
     }
 
     .container {
@@ -259,10 +259,11 @@ p {
     }
 
     .nav {
-        background-color: pink;
-        /* position: static;  */
+        /* background-color: pink; */
+        position: relative; 
         text-align: center;
         width: 100%;
+        margin-top: 40px;
     }
     
     ul  {
