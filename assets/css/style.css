@@ -106,6 +106,10 @@ li a {
     overflow: hidden; 
 }
 
+p {
+    word-wrap: break-word;
+}
+
 .footer {
     clear: left;
     border-top: 8px solid #4aaaa5;
@@ -186,3 +190,88 @@ li a {
     color: #ffffff; 
 }
 
+/*CSS Animation*/
+#submit
+{
+        opacity: 1;
+}
+#submit:hover
+{
+        opacity:0.5;
+        -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        transform: scale(0.8);
+}
+
+/* Media Queries */
+
+/* Desktop Large Screen max-width 980px */
+@media screen and (max-width: 980px) {
+    /* .wrapper, .footer {
+        /* width: 960px; */
+        /*width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+    } */
+
+    .wrapper, .header, .headerSection, .main, .wrapper,  .wrapper2, .footer, .form, .fullName, .email, .message  {
+        width: 100%;     
+    }
+  
+     .container {
+         width: 90%  
+     }
+}
+
+/* Tablet Medium Screen max-width 768px */
+@media screen and (max-width: 768px) {
+    .wrapper, .header, .headerSection, .main, .wrapper,  .wrapper2, .footer, .form, .fullName, .email, .message  {
+       width: 100%;     
+   }
+ 
+    .container {
+        width: 90%  
+    }
+
+    .pItem2,
+    .pItem4 {
+        margin-left: 0;
+    }
+}
+
+/* Phone Small Screen max-width 640px */
+@media screen and (max-width: 640px) {
+    .wrapper, .header, .headerSection, .main, .wrapper, .wrapper2, .footer, .form, .fullName, .email, .message {
+        width: 100%;     
+    }
+
+    .name, .nav, .header,.headerSection {
+        width: 100%;
+        /* position: static; */
+    }
+
+    .container {
+        width: 90%  
+    } 
+
+    h1 {
+        text-align: center;
+    }
+
+    .nav {
+        background-color: pink;
+        /* position: static;  */
+        text-align: center;
+        width: 100%;
+    }
+    
+    ul  {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .pItem2,
+    .pItem4 {
+        margin-left: 0;
+    }
+}
